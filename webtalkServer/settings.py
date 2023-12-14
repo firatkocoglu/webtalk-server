@@ -32,7 +32,13 @@ SECRET_KEY = str(os.getenv("SECRET_KEY"))
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["54.93.240.94", "127.0.0.1", "0.0.0.0"]
+ALLOWED_HOSTS = [
+    "web-talks.net",
+    "www.web-talks.net",
+    "18.199.47.215",
+    "127.0.0.1",
+    "0.0.0.0",
+]
 
 
 # Application definition
@@ -171,7 +177,7 @@ CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1:5173", "http://localhost:5173"]
 
 CORS_ORIGIN_WHITELIST = ["http://127.0.0.1:5173", "http://localhost:5173"]
 
-DOMAIN = "127.0.0.1:5173"
+# DOMAIN = "127.0.0.1:5173"
 
 SITE_NAME = "Web Talk"
 
