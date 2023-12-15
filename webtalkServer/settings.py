@@ -75,7 +75,7 @@ ROOT_URLCONF = "webtalkServer.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [os.path.join(BASE_DIR, "dist")],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -87,6 +87,10 @@ TEMPLATES = [
         },
     },
 ]
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "dist/assets")]
+
+STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 WSGI_APPLICATION = "webtalkServer.wsgi.application"
 
@@ -100,7 +104,7 @@ DATABASES = {
         "NAME": "postgres",
         "USER": "postgres",
         "PASSWORD": "121518Fx5-frt",
-        "HOST": "webtalk-db.cquov6ez33fv.eu-central-1.rds.amazonaws.com",
+        "HOST": "127.0.0.1",
         "PORT": "5432",
     }
 }
