@@ -18,17 +18,37 @@ from django.urls import path, include, re_path
 from django.conf import settings
 from django.conf.urls.static import static
 from django.shortcuts import render
+from django.views.decorators.csrf import csrf_exempt
+
+import posixpath
+from pathlib import Path
+
+from django.utils._os import safe_join
+from django.views.static import serve as static_serve
 
 
-def render_react(request):
-    return render(request, "index.html")
+@csrf_exempt
+def serve_react(request, path, document_root=None):
+    path = posixpath.normpath(path).lstrip("/")
+    fullpath = Path(safe_join(document_root, path))
+    if fullpath.is_file():
+        return static_serve(request, path, document_root)
+    else:
+        return static_serve(request, "index.html", document_root)
 
 
-urlpatterns = [
-    path("admin/clearcache/", include("clearcache.urls")),
-    path("admin/", admin.site.urls),
-    re_path(r"^$", render_react),
-    re_path(r"^(?:.*)/?$", render_react),
-    path("auth/", include("djoser.urls")),
-    path("api/", include("blogs.urls")),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+urlpatterns = (
+    [
+        path("admin/clearcache/", include("clearcache.urls")),
+        path("admin/", admin.site.urls),
+        path("auth/", include("djoser.urls")),
+        path("api/", include("blogs.urls")),
+        re_path(
+            r"^(?P<path>.*)$",
+            serve_react,
+            {"document_root": settings.REACT_APP_BUILD_PATH},
+        ),
+    ]
+    + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+)

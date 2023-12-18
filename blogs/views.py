@@ -1,5 +1,6 @@
 from django.shortcuts import get_object_or_404
 from django.contrib.auth import authenticate, login, logout
+from django.views.decorators.csrf import csrf_exempt, csrf_protect, ensure_csrf_cookie
 
 from rest_framework import status
 from rest_framework.decorators import api_view
@@ -36,6 +37,7 @@ from rest_framework.pagination import PageNumberPagination
 # SESSION BASED AUTHENTICATION VIEWS - LOGIN AND LOGOUT USER
 @api_view(["POST"])
 def login_view(request):
+    print(request)
     # EXTRACT USERNAME AND PASSWORD FROM THE REQUEST
     username = request.data["username"]
     password = request.data["password"]
@@ -230,10 +232,12 @@ class BlogViewSet(ModelViewSet):
         filters.SearchFilter,
     )
 
-    filterset_fields = ("category__id",)
+    filterset_fields = [
+        "category__id",
+    ]
 
     search_fields = (
-        "category__id",
+        "category__category",
         "user__username",
         "user__first_name",
         "user__last_name",

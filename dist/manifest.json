@@ -1,0 +1,31 @@
+{
+  "index.css": {
+    "file": "assets/index-62d7aecf.css",
+    "src": "index.css"
+  },
+  "index.html": {
+    "assets": [
+      "assets/web-talks-logo-02fc1a33.jpeg",
+      "assets/not_found-c2f1d5ea.jpeg",
+      "assets/bg_12-8ebc73f5.jpeg"
+    ],
+    "css": [
+      "assets/index-62d7aecf.css"
+    ],
+    "file": "assets/index-eae8187f.js",
+    "isEntry": true,
+    "src": "index.html"
+  },
+  "src/assets/bg_12.jpeg": {
+    "file": "assets/bg_12-8ebc73f5.jpeg",
+    "src": "src/assets/bg_12.jpeg"
+  },
+  "src/assets/not_found.jpeg": {
+    "file": "assets/not_found-c2f1d5ea.jpeg",
+    "src": "src/assets/not_found.jpeg"
+  },
+  "src/assets/web-talks-logo.jpeg": {
+    "file": "assets/web-talks-logo-02fc1a33.jpeg",
+    "src": "src/assets/web-talks-logo.jpeg"
+  }
+}
