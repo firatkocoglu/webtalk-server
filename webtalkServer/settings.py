@@ -190,8 +190,8 @@ CSRF_TRUSTED_ORIGINS = [
     "http://0.0.0.0:80",
     "http://18.199.47.215:80",
     "http://web-talks.net",
-    "http://127.0.0.1:8000",
-    "http://localhost:8000",
+    "http://127.0.0.1:80",
+    "http://localhost:80",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
 ]
@@ -200,8 +200,8 @@ CORS_ORIGIN_WHITELIST = [
     "http://0.0.0.0:80",
     "http://18.199.47.215:80",
     "http://web-talks.net",
-    "http://127.0.0.1:8000",
-    "http://localhost:8000",
+    "http://127.0.0.1:80",
+    "http://localhost:80",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
 ]
@@ -224,3 +224,6 @@ EMAIL_USE_TLS = True
 
 CSRF_COOKIE_SECURE = False
 SESSION_COOKIE_SECURE = False
+
+SESSION_COOKIE_DOMAIN = "web-talks.net"
+CSRF_COOKIE_DOMAIN = "web-talks.net"
