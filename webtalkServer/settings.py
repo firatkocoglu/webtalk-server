@@ -33,7 +33,7 @@ SECRET_KEY = str(os.getenv("SECRET_KEY"))
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "http://web-talks.net",
+    "web-talks.net",
     "18.199.47.215",
     "0.0.0.0" "127.0.0.1",
     "localhost",
