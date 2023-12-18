@@ -33,10 +33,9 @@ SECRET_KEY = str(os.getenv("SECRET_KEY"))
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'web-talks.net',
-    '18.199.47.215',
-    '0.0.0.0'
-    "127.0.0.1",
+    "web-talks.net",
+    "18.199.47.215",
+    "0.0.0.0" "127.0.0.1",
     "localhost",
 ]
 
@@ -176,9 +175,9 @@ AUTH_USER_MODEL = "blogs.UserProfile"
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
-    'http://0.0.0.0:80',
-    'http://18.199.47.215:80',
-    'http://web-talks.net',
+    "http://0.0.0.0:80",
+    "http://18.199.47.215:80",
+    "http://web-talks.net",
     "http://127.0.0.1:8000",
     "http://localhost:8000",
     "http://localhost:5173",
@@ -188,9 +187,9 @@ CORS_ALLOWED_ORIGINS = [
 CORS_ALLOW_HEADERS = list(default_headers) + ["X-CSRFTOKEN", ""]
 
 CSRF_TRUSTED_ORIGINS = [
-    'http://0.0.0.0:80',
-    'http://18.199.47.215:80',
-    'http://web-talks.net',
+    "http://0.0.0.0:80",
+    "http://18.199.47.215:80",
+    "http://web-talks.net",
     "http://127.0.0.1:8000",
     "http://localhost:8000",
     "http://localhost:5173",
@@ -198,14 +197,16 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    'http://0.0.0.0:80',
-    'http://18.199.47.215:80',
-    'http://web-talks.net',
+    "http://0.0.0.0:80",
+    "http://18.199.47.215:80",
+    "http://web-talks.net",
     "http://127.0.0.1:8000",
     "http://localhost:8000",
     "http://localhost:5173",
     "http://127.0.0.1:5173",
 ]
+
+SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 
 DOMAIN = "web-talks.net"
 
