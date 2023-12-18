@@ -101,7 +101,7 @@ DATABASES = {
         "NAME": "postgres",
         "USER": "postgres",
         "PASSWORD": "121518Fx5-frt",
-        "HOST": "127.0.0.1",
+        "HOST": "webtalk-db.cquov6ez33fv.eu-central-1.rds.amazonaws.com",
         "PORT": "5432",
     }
 }
