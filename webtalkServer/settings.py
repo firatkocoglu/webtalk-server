@@ -176,6 +176,7 @@ AUTH_USER_MODEL = "blogs.UserProfile"
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
+    'http://web-talks.net',
     "http://127.0.0.1:8000",
     "http://localhost:8000",
     "http://localhost:5173",
@@ -185,6 +186,7 @@ CORS_ALLOWED_ORIGINS = [
 CORS_ALLOW_HEADERS = list(default_headers) + ["X-CSRFTOKEN", ""]
 
 CSRF_TRUSTED_ORIGINS = [
+    'http://web-talks.net',
     "http://127.0.0.1:8000",
     "http://localhost:8000",
     "http://localhost:5173",
@@ -192,6 +194,7 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 CORS_ORIGIN_WHITELIST = [
+    'http://web-talks.net',
     "http://127.0.0.1:8000",
     "http://localhost:8000",
     "http://localhost:5173",
