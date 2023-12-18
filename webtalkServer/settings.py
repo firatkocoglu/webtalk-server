@@ -33,7 +33,7 @@ SECRET_KEY = str(os.getenv("SECRET_KEY"))
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "web-talks.net",
+    "http://web-talks.net",
     "18.199.47.215",
     "0.0.0.0" "127.0.0.1",
     "localhost",
@@ -189,13 +189,8 @@ CORS_ALLOWED_ORIGINS = [
 CORS_ALLOW_HEADERS = list(default_headers) + ["X-CSRFTOKEN", ""]
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://0.0.0.0:80",
-    "http://18.199.47.215:80",
+    "http://18.199.47.215",
     "http://web-talks.net",
-    "http://127.0.0.1:80",
-    "http://localhost:80",
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
 ]
 
 CORS_ORIGIN_WHITELIST = [
