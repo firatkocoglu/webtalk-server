@@ -181,16 +181,12 @@ CORS_ALLOWED_ORIGINS = [
     "http://0.0.0.0:80",
     "http://18.199.47.215",
     "http://web-talks.net",
-    "http://127.0.0.1:8000",
-    "http://localhost:8000",
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
 ]
 
 CORS_ALLOW_HEADERS = list(default_headers) + ["X-CSRFTOKEN", ""]
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://18.199.47.215",
+    "http://18.199.47.215:80",
     "http://web-talks.net",
 ]
 
@@ -198,14 +194,10 @@ CORS_ORIGIN_WHITELIST = [
     "http://0.0.0.0:80",
     "http://18.199.47.215",
     "http://web-talks.net",
-    "http://127.0.0.1:80",
-    "http://localhost:80",
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
 ]
 
 
-DOMAIN = "web-talks.net"
+DOMAIN = "http://web-talks.net"
 
 SITE_NAME = "Web Talk"
 
