@@ -212,5 +212,5 @@ EMAIL_HOST_USER = str(os.getenv("EMAIL_USER"))
 EMAIL_HOST_PASSWORD = str(os.getenv("EMAIL_PASS"))
 EMAIL_USE_TLS = True
 
-SESSION_COOKIE_DOMAIN = "web-talks.net"
-CSRF_COOKIE_DOMAIN = "web-talks.net"
+SESSION_COOKIE_DOMAIN = "http://web-talks.net"
+CSRF_COOKIE_DOMAIN = "http://web-talks.net"
