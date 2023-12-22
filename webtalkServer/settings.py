@@ -178,9 +178,9 @@ SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "https://0.0.0.0:80",
-    "https://18.199.47.215:80",
-    "https://web-talks.net",
+    "http://0.0.0.0:80",
+    "http://18.199.47.215:80",
+    "http://web-talks.net",
     "http://127.0.0.1:8000",
     "http://localhost:8000",
     "http://localhost:5173",
@@ -190,14 +190,14 @@ CORS_ALLOWED_ORIGINS = [
 CORS_ALLOW_HEADERS = list(default_headers) + ["X-CSRFTOKEN", ""]
 
 CSRF_TRUSTED_ORIGINS = [
-    "https://18.199.47.215",
-    "https://web-talks.net",
+    "http://18.199.47.215",
+    "http://web-talks.net",
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    "https://0.0.0.0:80",
-    "https://18.199.47.215:80",
-    "https://web-talks.net",
+    "http://0.0.0.0:80",
+    "http://18.199.47.215:80",
+    "http://web-talks.net",
     "http://127.0.0.1:80",
     "http://localhost:80",
     "http://localhost:5173",
