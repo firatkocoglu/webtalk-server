@@ -33,9 +33,10 @@ SECRET_KEY = str(os.getenv("SECRET_KEY"))
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    ".web-talks.net",
+    "web-talks.net",
     "18.199.47.215",
-    "0.0.0.0" "127.0.0.1",
+    "0.0.0.0",
+    "127.0.0.1",
     "localhost",
 ]
 
@@ -228,3 +229,8 @@ EMAIL_USE_TLS = True
 
 # CSRF_COOKIE_DOMAIN = "web-talks.net"
 # SESSION_COOKIE_DOMAIN = "web-talks.net"
+
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+SECURE_SSL_REDIRECT = True
+SESSION_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
