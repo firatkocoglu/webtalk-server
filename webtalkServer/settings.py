@@ -177,9 +177,9 @@ SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "http://0.0.0.0:80",
-    "http://18.199.47.215:80",
-    "http://web-talks.net",
+    "https://0.0.0.0:80",
+    "https://18.199.47.215:80",
+    "https://web-talks.net",
     "http://127.0.0.1:8000",
     "http://localhost:8000",
     "http://localhost:5173",
@@ -189,14 +189,14 @@ CORS_ALLOWED_ORIGINS = [
 CORS_ALLOW_HEADERS = list(default_headers) + ["X-CSRFTOKEN", ""]
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://18.199.47.215",
-    "http://web-talks.net",
+    "https://18.199.47.215",
+    "https://web-talks.net",
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    "http://0.0.0.0:80",
-    "http://18.199.47.215:80",
-    "http://web-talks.net",
+    "https://0.0.0.0:80",
+    "https://18.199.47.215:80",
+    "https://web-talks.net",
     "http://127.0.0.1:80",
     "http://localhost:80",
     "http://localhost:5173",
@@ -219,12 +219,12 @@ EMAIL_HOST_USER = str(os.getenv("EMAIL_USER"))
 EMAIL_HOST_PASSWORD = str(os.getenv("EMAIL_PASS"))
 EMAIL_USE_TLS = True
 
-SECURE_HSTS_SECONDS = 60
+# SECURE_HSTS_SECONDS = 60
 
 # SECURE_SSL_REDIRECT = True
 
-CSRF_COOKIE_SECURE = True
-SESSION_COOKIE_SECURE = True
+# CSRF_COOKIE_SECURE = True
+# SESSION_COOKIE_SECURE = True
 
-CSRF_COOKIE_DOMAIN = "web-talks.net"
-SESSION_COOKIE_DOMAIN = "web-talks.net"
+# CSRF_COOKIE_DOMAIN = "web-talks.net"
+# SESSION_COOKIE_DOMAIN = "web-talks.net"
