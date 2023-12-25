@@ -178,7 +178,6 @@ SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "http://0.0.0.0:80",
     "http://18.199.47.215",
     "http://web-talks.net",
 ]
@@ -214,3 +213,5 @@ EMAIL_USE_TLS = True
 
 SESSION_COOKIE_DOMAIN = "http://web-talks.net"
 CSRF_COOKIE_DOMAIN = "http://web-talks.net"
+
+SESSION_COOKIE_SECURE = False
