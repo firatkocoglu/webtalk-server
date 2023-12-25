@@ -186,7 +186,7 @@ CORS_ALLOW_HEADERS = list(default_headers) + ["X-CSRFTOKEN", ""]
 
 CSRF_TRUSTED_ORIGINS = [
     "http://web-talks.net",
-    "http://18.199.47.215:80",
+    "http://18.199.47.215",
 ]
 
 CORS_ORIGIN_WHITELIST = [
