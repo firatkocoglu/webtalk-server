@@ -36,6 +36,7 @@ from rest_framework.pagination import PageNumberPagination
 
 # SESSION BASED AUTHENTICATION VIEWS - LOGIN AND LOGOUT USER
 @api_view(["POST"])
+@ensure_csrf_cookie
 def login_view(request):
     print(request)
     # EXTRACT USERNAME AND PASSWORD FROM THE REQUEST
