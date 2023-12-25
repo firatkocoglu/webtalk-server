@@ -98,7 +98,7 @@ WSGI_APPLICATION = "webtalkServer.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "webtalk-db",
+        "NAME": "postgres",
         "USER": "postgres",
         "PASSWORD": "121518Fx5-frt",
         "HOST": "webtalk-db.cquov6ez33fv.eu-central-1.rds.amazonaws.com",
