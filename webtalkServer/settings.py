@@ -98,7 +98,7 @@ WSGI_APPLICATION = "webtalkServer.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "postgres",
+        "NAME": "webtalk-db",
         "USER": "postgres",
         "PASSWORD": "121518Fx5-frt",
         "HOST": "webtalk-db.cquov6ez33fv.eu-central-1.rds.amazonaws.com",
@@ -178,15 +178,15 @@ SECURE_CROSS_ORIGIN_OPENER_POLICY = None
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
-    "http://18.199.47.215",
     "http://web-talks.net",
+    "http://18.199.47.215",
 ]
 
 CORS_ALLOW_HEADERS = list(default_headers) + ["X-CSRFTOKEN", ""]
 
 CSRF_TRUSTED_ORIGINS = [
-    "http://18.199.47.215:80",
     "http://web-talks.net",
+    "http://18.199.47.215:80",
 ]
 
 CORS_ORIGIN_WHITELIST = [
