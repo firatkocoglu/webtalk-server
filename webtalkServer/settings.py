@@ -179,7 +179,6 @@ CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOWED_ORIGINS = [
     "http://web-talks.net",
-    "http://18.199.47.215",
 ]
 
 CORS_ALLOW_HEADERS = list(default_headers) + [
@@ -188,12 +187,9 @@ CORS_ALLOW_HEADERS = list(default_headers) + [
 
 CSRF_TRUSTED_ORIGINS = [
     "http://web-talks.net",
-    "http://18.199.47.215",
 ]
 
 CORS_ORIGIN_WHITELIST = [
-    "http://0.0.0.0:80",
-    "http://18.199.47.215",
     "http://web-talks.net",
 ]
 
