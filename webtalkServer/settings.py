@@ -202,14 +202,12 @@ DJOSER = {
     "PASSWORD_RESET_CONFIRM_URL": "auth/users/reset_password_confirm/{uid}/{token}"
 }
 
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_PORT = "587"
-EMAIL_HOST_USER = str(os.getenv("EMAIL_USER"))
-EMAIL_HOST_PASSWORD = str(os.getenv("EMAIL_PASS"))
-EMAIL_USE_TLS = True
-
-SESSION_COOKIE_DOMAIN = "http://web-talks.net"
-CSRF_COOKIE_DOMAIN = "http://web-talks.net"
+# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_HOST = "smtp.gmail.com"
+# EMAIL_PORT = "587"
+# EMAIL_HOST_USER = str(os.getenv("EMAIL_USER"))
+# EMAIL_HOST_PASSWORD = str(os.getenv("EMAIL_PASS"))
+# EMAIL_USE_TLS = True
 
 SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = False
