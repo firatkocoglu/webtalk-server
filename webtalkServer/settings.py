@@ -34,10 +34,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = [
     "web-talks.net",
-    "18.199.47.215",
-    "0.0.0.0",
-    "127.0.0.1",
-    "localhost",
 ]
 
 
