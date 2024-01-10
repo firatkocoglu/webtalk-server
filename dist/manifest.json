@@ -1,18 +1,19 @@
 {
   "index.css": {
-    "file": "assets/index-62d7aecf.css",
+    "file": "assets/index-8b412995.css",
     "src": "index.css"
   },
   "index.html": {
     "assets": [
       "assets/web-talks-logo-02fc1a33.jpeg",
       "assets/not_found-c2f1d5ea.jpeg",
+      "assets/Oxygen-Regular-a2227b8a.ttf",
       "assets/bg_12-8ebc73f5.jpeg"
     ],
     "css": [
-      "assets/index-62d7aecf.css"
+      "assets/index-8b412995.css"
     ],
-    "file": "assets/index-c16cb70e.js",
+    "file": "assets/index-5415e533.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -27,5 +28,9 @@
   "src/assets/web-talks-logo.jpeg": {
     "file": "assets/web-talks-logo-02fc1a33.jpeg",
     "src": "src/assets/web-talks-logo.jpeg"
+  },
+  "src/fonts/Oxygen-Regular.ttf": {
+    "file": "assets/Oxygen-Regular-a2227b8a.ttf",
+    "src": "src/fonts/Oxygen-Regular.ttf"
   }
 }
